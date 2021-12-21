@@ -1,8 +1,5 @@
 # Pneumonia-detection-from-chest-X-Ray-image
-We have used https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia this dataset for detecting Pneumonia. This Dataset contains chest
-XRay images. There are three sets. Train, Test, Validation.
-We have implemented 10 different pretrained network and also experimented the effect of dropout and two customized CNN. Some of the models output were really great.
-We achieved 92 percent accuracy in mobilenet with dropout layer from validation dataset which contain 618 images. MobileNet with dropout and MoileNetV2 performed perfect 
-in Test set (16 images). With a few margial exception we noticed that almost all the models had better Recall score than Precision for both Validation and test set. The higher 
-number of positive images in training set could be one possible reason. If training can execute by making the train set balanced, the outcome may result to better 
-precision and accuracy result.
+As a part of Machine Learning course project, We used CNN (pretained and custom) classifiers for detecting Pneumonia from Chest X-Ray images. We have used https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia this dataset for detecting Pneumonia. This Dataset contains chest X-Ray images. There are three sets. Train, Test, Validation.
+We used 10 different pretrained models and used their weights in Chest X-ray dataset. Among this Ten, six models were also experimented with dropout rate of 0.4 and result was compared. Apart from these thirteen models, we have run two custom CNN of 7 layers and 17 layers. All these models were compiled with the loss function of “Categorical Cross Entropy”. Adam was used as the optimizer function for all models.
+
+The highest accuracy we achieved was 92 percent accuracy in mobilenet with dropout layer from validation dataset (618 images). MobileNet with dropout and MoileNetV2 performed perfect in Test set (16 images). With a few margial exception we noticed that almost all the models had better Recall score than Precision for both Validation and test set. The higher number of positive images in training set could be one possible reason. If training can execute by making the train set balanced, the outcome may result to better precision and accuracy.
