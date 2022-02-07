@@ -3,3 +3,5 @@ As a part of Machine Learning course project, We used CNN (pretained and custom)
 We used 10 different pretrained models and used their weights in Chest X-ray dataset. Among this Ten, six models were also experimented with dropout rate of 0.4 and result was compared. Apart from these thirteen models, we have run two custom CNN of 7 layers and 17 layers. All these models were compiled with the loss function of “Categorical Cross Entropy”. Adam was used as the optimizer function for all models.
 
 The highest accuracy we achieved was 92 percent accuracy in mobilenet with dropout layer from validation dataset (618 images). MobileNet with dropout and MoileNetV2 performed perfect in Test set (16 images). With a few margial exception we noticed that almost all the models had better Recall score than Precision for both Validation and test set. The higher number of positive images in training set could be one possible reason. If training can execute by making the train set balanced, the outcome may result to better precision and accuracy.
+
+![image](https://user-images.githubusercontent.com/17882265/152856809-e16638b4-14b2-45b7-8f15-b88e40f64408.png)
